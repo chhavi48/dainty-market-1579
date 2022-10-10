@@ -30,6 +30,7 @@ authRouter.post("/login", async (req, res) => {
 
     const userInfo = await User.findOne({ email });
     const hash_pass = userInfo.password;
+console.log(hash_pass);
 
     console.log({ "userInfo": userInfo })
     if (!userInfo) {
