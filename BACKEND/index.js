@@ -16,7 +16,7 @@ const professionalController = require("./Controller/ProfessionalController");
 const othersController = require("./Controller/OthersController");
 const notesController = require("./Controller/NotesController");
 
-const authentication = require("./Middleware/authentication")
+
 const noteRouter = require("./Controller/TaskController")
 const authRouter=require("./Controller/User.AuthController")
 
@@ -32,7 +32,7 @@ app.use("/personal",personalController);
 app.use("/professional",professionalController);
 app.use("/others",othersController)
 app.use("/notes",notesController);
-//port 1234
+
 
  
 app.use("/note",noteRouter);

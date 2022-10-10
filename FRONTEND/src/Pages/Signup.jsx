@@ -46,7 +46,7 @@ export const Signup = () => {
 
     console.log(payload)
     axios
-      .post("http://localhost:5000/auth/signup", payload)
+      .post("https://mighty-inlet-67245.herokuapp.com/auth/signup", payload)
       .then((response) => {
         console.log(response);
         alert("Signup successfully");
