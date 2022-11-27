@@ -56,7 +56,7 @@ export default function ManualClose({ today ,getNotes }) {
     };
   
     axios
-      .post(`https://mighty-inlet-67245.herokuapp.com/note/create`, payload)
+      .post(`https://track-time-server.onrender.com/note/create`, payload)
       .then((response) => {
         console.log(response.data);
         // window.location.reload(false);

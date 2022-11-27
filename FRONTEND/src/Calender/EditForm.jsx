@@ -41,7 +41,7 @@ export default function EditForm({ id, getNotes }) {
       Note,
     };
     axios
-      .patch(`https://mighty-inlet-67245.herokuapp.com/note/edit/${id}`, payload)
+      .patch(`https://track-time-server.onrender.com/note/edit/${id}`, payload)
       .then((responce) => {
         // console.log("update responce", responce);
         alert("NOTE Updated");
@@ -57,7 +57,7 @@ export default function EditForm({ id, getNotes }) {
 
   const handleEdit = () => {
     //console.log("editform id", id);
-    axios.get(`https://mighty-inlet-67245.herokuapp.com/note/info/${id}`).then((responce) => {
+    axios.get(`https://track-time-server.onrender.com/note/info/${id}`).then((responce) => {
       //console.log(responce.data.note);
       if (responce.data.note) {
         setTitle(responce.data.note.Title);
@@ -69,7 +69,7 @@ export default function EditForm({ id, getNotes }) {
 
   const handleDelete = () => {
     // console.log("deleteform id", id);
-    axios.delete(`https://mighty-inlet-67245.herokuapp.com/note/delete/${id}`).then((response) => {
+    axios.delete(`https://track-time-server.onrender.com/note/delete/${id}`).then((response) => {
       alert("Deleted");
      // console.log("deleteform id", response);
       if (response.status == 202) {

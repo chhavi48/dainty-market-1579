@@ -46,7 +46,7 @@ export const Signup = () => {
 
     console.log(payload)
     axios
-      .post("https://mighty-inlet-67245.herokuapp.com/auth/signup", payload)
+      .post("https://track-time-server.onrender.com/auth/signup", payload)
       .then((response) => {
         console.log(response);
         alert("Signup successfully");

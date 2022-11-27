@@ -40,7 +40,7 @@ export const Login = () => {
     };
    console.log(payload);
     axios
-      .post("https://mighty-inlet-67245.herokuapp.com/auth/login", payload)
+      .post("https://track-time-server.onrender.com/auth/login", payload)
       .then((response) => {
         // console.log("toke", response.data.token);
         localStorage.setItem("token", response.data.token);
@@ -50,7 +50,7 @@ export const Login = () => {
     // try {
     //   e.preventDefault();
     //   // console.log(formData)
-    //   axios.post("https://mighty-inlet-67245.herokuapp.com/auth/login", payload);
+    //   axios.post("https://track-time-server.onrender.com/auth/login", payload);
     //   const user = data[0];
     //   console.log(user);
     //   localStorage.setItem("userid", user["_id"]);
